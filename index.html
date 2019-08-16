@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajax HW</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class=" row" >
+            <div class=" col-6 border ex ">
+                <h1 class="jumbotron"> ex. 1</h1>
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control col8" id="search-capital">
+                    <button class=" btn btn-primary m-1 " id="find-capital-btn">Search Capital</button>
+                </div>
+                <div class="col mt-5 mb-5" align=" center" id="capital-cards"></div>
+            </div>
+            <div class=" col-6 border ex " >
+                <h1 class="jumbotron"> ex. 2</h1>
+                <div class="input-group input-group-lg">
+                    <button class=" btn-lg btn-success col-2 ml-3 money " id="GBP">£</button>
+                    <button class=" btn-lg btn-success col-2 ml-3 money" id="EUR">€</button>
+                    <button class=" btn-lg btn-success col-2 ml-3 money" id="ILS">₪</button>
+                    <button class=" btn-lg btn-success col-2 ml-3 money" id="USD">$</button>
+                    <button class=" btn-lg btn-success col-2 ml-3 money" id="JPY">¥</button>
+                </div>
+                <div class="col mt-5 " align=" center" id="money-cards"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="./ex1.js"></script>
+    <script src="./ex2.js"></script>
+</body>
+
+
+</html>
