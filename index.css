@@ -29,3 +29,21 @@
     height: 20rem;
     vertical-align: top
 }
+
+.capital img{
+  height: 8rem;
+}
+select 
+{
+width: 250px;
+height:120px;
+border-radius: 9px;
+text-emphasis: bolder;
+font-size: 2rem;
+background-size: 100% 100%;
+background-color: gold;
+}
+/* select option{
+
+} */
+
