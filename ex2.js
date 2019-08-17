@@ -9,7 +9,7 @@ const currencies = {
 
 $(function () {
 
-    function getCapital(search, callback) {
+    function getCurrency(search, callback) {
         $.ajax({
             url: `https://restcountries.eu/rest/v2/currency/${search}`,
             method: "GET",
@@ -22,21 +22,26 @@ $(function () {
             }
         })
     }
-    $(".money").on("change", function () {
-        $("select").css({ "background-image": `url("${currencies[this.value]}")` })
+    $(".money").on("click", function (e) {
+        console.log(e.target.id)
+        $(".back").css({ "background-image": `url("${currencies[e.target.id]}")` })
         $("#money-cards").html(`<div class="loader"></div>`)
-        getCapital(this.value, (result) => {
+        getCurrency(e.target.id, (result) => {
             $("#money-cards").html(drawCard(result))
         })
 
     })
     function init(array) {
         $(".money").html(array.map(money => {
-            const reasult = `<option value="${money}" id="${money}">${money}</option>`
-            $(`#${money}`).css({ "background-image": `url("${currencies[money]}")` })
+            const reasult = `<div class="dropdown-item" value="${money}" id="${money}"
+            style="background-image:url(${currencies[money]})">${money}</div>`
+
+            $(`${money}`).css({ "background-image": `url(${currencies[money]})` })
             return reasult
         }))
-        $("select").prepend("<option selected>Select Currency</option>")
+        getCurrency("ils", (result) => {
+            $("#money-cards").html(drawCard(result))
+        })
     }
 
 

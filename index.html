@@ -8,6 +8,7 @@
     <title>Ajax HW</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./glyphicons.css">
 </head>
 
 <body>
@@ -23,15 +24,28 @@
             </div>
             <div class=" col-6 border ex ">
                 <h1 class="jumbotron"> ex. 2</h1>
-                <select class="  ml-4 money">
-                </select>
+                <!-- <select class="  ml-4 money ">
+                </select> -->
 
-                <div class="col mt-5 " align=" center" id="money-cards"></div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle back" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        
+                    </button>
+                    <div class="dropdown-menu money" aria-labelledby="dropdownMenuButton">
+                    </div>
+                </div>
+                <div class="col mt-5 " align=" center" id="money-cards">
+
+                </div>
             </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./propper.js"></script>
     <script src="./ex1.js"></script>
     <script src="./ex2.js"></script>
 </body>

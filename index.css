@@ -33,17 +33,23 @@
 .capital img{
   height: 8rem;
 }
-select 
+.back
 {
-width: 250px;
-height:120px;
+color: black;
+width: 200px;
+height:100px;
 border-radius: 9px;
 text-emphasis: bolder;
-font-size: 2rem;
+font-size: 1.2rem;
 background-size: 100% 100%;
-background-color: gold;
+background-image: url("https://hskalla.files.wordpress.com/2013/07/d8aed985d8b3d98ad986-d8b4d98ad983d984.jpg?w=584")
 }
-/* select option{
+.dropdown-item{
+width: 170px;
+height:80px;
+border-radius: 9px;
+text-emphasis: bolder;
+font-size: 1.5rem;
+background-size: 100% 100%;
 
-} */
-
+}
